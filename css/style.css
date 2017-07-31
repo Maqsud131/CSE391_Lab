@@ -134,4 +134,5 @@ table, th, td {
     border: 1px solid powderblue;
     border-collapse: collapse;
     text-align: center;
+    margin: auto;
 }
