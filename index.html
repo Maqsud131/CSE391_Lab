@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>MD. Maqsud ul Anwar</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    var str = ["“Yesterday is history, tomorrow is a mystery, today is God's gift, that's why we call it the present.” - Joan Rivers","“Happiness is the consequence of personal effort. You must fight for it, strive for it, and insist upon it” - Rev Run","“I have not failed. I've just found 10,000 ways that won't work.” - Edison","“Sometimes the questions are complicated and the answers are simple.” - Dr. Seuss"];
+    var i = 0;
+
+    function changeQuote(){
+      i = Math.floor(Math.random() * 10)%4;
+      document.getElementById("quot").innerHTML = str[i];
+    }
+
+    function turnGreen(){
+      changeQuote();
+      document.getElementById("box").style.backgroundColor = '#33cc33';
+      document.getElementById("quot").style.fontStyle ='italic' ;
+    }
+    function turnBlue(){
+      changeQuote();
+      document.getElementById("box").style.backgroundColor = '#00ccff';
+      document.getElementById("quot").style.fontStyle ='bold' ;
+    }
+    function turnRed(){
+      changeQuote();
+      document.getElementById("box").style.backgroundColor = '#e60000';
+      document.getElementById("quot").style.fontStyle ='normal' ;
+    }
+    function turnOrange(){
+      changeQuote();
+      document.getElementById("box").style.backgroundColor = '#ff8533';
+      document.getElementById("quot").style.fontStyle ='italic' ;
+    }
+
+    function alertMe(){
+      alert("function works");
+    }
+
+
+  </script>
+  
+</head>
+
+<body onload="changeQuote()">
+  
+    <div class="bg1">
+
+      <div class="tbg">
+        <h1 align="center">Maqsud ul Anwar</h1>
+        <h3 align="center">A Dreamer</h3>
+      </div>
+
+      <div class="gap">
+      </div>
+
+      <div class="part1">
+        <div class="abtme" >
+          <h2 style="font-size:30px"> About Myself</h2>
+          <p style="font-size:25px">Hello, I am Maqsud, I am a Computer Scince student from <a href="http://bracu.ac.bd">BRAC Univerty</a> Bangladesh. I live in Mohmmadpur, Dhaka.</p>
+        </div>
+
+        <div class="propic">
+        </div>
+
+      </div>
+
+      <div class="gap">
+      </div>
+
+      <div class="part1">
+        <div class="hobbypic">
+        </div>
+
+
+        <div class="hobby" >
+          <h2 style="font-size:30px">My Hobbies</h2>
+          <p style="font-size:25px">My primary hobby is problem solving, and love solving algorithmic problems, as a result I had the luck to participate in various Programming Contest hosted by various Universities all over Bangladesh but besides that i also love playing online game such Dota 2 with my friends, also i love to read manga and watch animes</p>
+        </div>
+      </div>
+
+      <div class="gap2">
+      </div>
+
+     
+      <div class="part2">
+        <div class="favlink" >
+          <h2 style="font-size:30px"> Some Favorite Sites</h2>
+          <p style="font-size:25px"><a href="http://uhunt.felix-halim.net/id/326108">My Uhunt Profile</a></p>
+          <p style="font-size:25px"><a href="http://youtube.com">YouTube</a></p>
+        </div>
+      </div>
+
+      <table style="width:60%" >
+        <tr>
+          <td>Name: </td>
+          <td>MD. Maqsud ul Anwar</td>
+        </tr>
+        <tr>
+          <td>Department: </td>
+          <td>CSE</td>
+        </tr>
+        <tr>
+          <td>ID:  </td>
+          <td>13101033 </td>
+        </tr>
+        <tr>
+          <td>Semeter  </td>
+          <td>Spring 13 </td>
+        </tr>
+      </table>
+
+      <div class="gap2">
+      </div>
+      
+      <div class="quote" id="box">
+        <h2 style="font-size:30px">Qoute Of The Day!</h2>
+        <p id="quot">My qoute</p>
+      </div>
+      <button type="button" onclick ="turnGreen()">Green</button>
+      <button type="button" onclick ="turnBlue()">Blue</button>
+      <button type="button" onclick ="turnRed()">Red</button>
+      <button type="button" onclick ="turnOrange()">Orange</button>
+
+      <div class="gap2">
+      </div>
+      <h2><a href="file:///C:/Users/ASUS/Downloads/codepen_EmBqNM/hero.html">Hero Converter</a></h2>
+      <h2><a href="file:///C:/Users/ASUS/Downloads/codepen_EmBqNM/maxmin.html">Max Min</a></h2>
+
+    </div>
+
+
+  </body>
+</html>

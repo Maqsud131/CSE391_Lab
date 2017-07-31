@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Hero Converter</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+
+    function changeQuote(){
+      i = Math.floor(Math.random() * 10)%4;
+      document.getElementById("quot").innerHTML = str[i];
+    }
+    var i=0;
+    function calc(inVal,opVal){
+      if(opVal==1)i=inVal*0.4536;
+      else i=inVal*2.2046;
+      document.getElementById("ans").innerHTML = i;
+    }
+    
+    function alertMe(){
+      alert("function works");
+    }
+
+
+  </script>
+  
+</head>
+
+<body onload="changeQuote()">
+  
+    <div class="bg1">
+
+      <div class="tbg">
+        <h1 align="center">Hero Converter</h1>
+        <h3 align="center" style="font-family: Times">v1.0</h3>
+      </div>
+
+      <div class="gap">
+      </div>
+
+      <div class="he">
+
+          <label style="font-size:30px">Convert</label>
+          
+          <input id="weight" type="number" placeholder="Weight" oninput=>
+          
+          <select id="op">
+            <option value="1">lb to kg</option>
+            <option value="0">kg to lb</option>
+          </select>
+          <button type="button" onclick="calc(weight.value,op.value)">Go!</button>
+          <span id="ans"></span>
+        
+      </div>
+
+    </div>
+  </body>
+</html>
